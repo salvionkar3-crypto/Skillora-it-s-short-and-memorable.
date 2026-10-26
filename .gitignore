@@ -1,27 +1,35 @@
-# Byte-compiled / optimized / DLL files
+
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
-
-# SQLite Database
-*.db
-*.sqlite3
-
-# Environment variables & secrets
-.env
-.streamlit/secrets.toml
+*.pyo
+*.pyd
 
 # Virtual environments
+.venv/
 venv/
 env/
-.venv/
 
-# Pytest / Coverage
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Databases and user data
+*.db
+*.sqlite
+*.sqlite3
+
+# Test and tool caches
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .coverage
 htmlcov/
 
-# IDE files
+# IDE and operating system files
 .vscode/
 .idea/
-*.swp
+.DS_Store
+Thumbs.db
